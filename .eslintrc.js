@@ -26,5 +26,7 @@ module.exports = {
   },
   plugins: ["react", "react-hooks", "jsx-a11y", "import", "@typescript-eslint"],
   root: true,
-  rules: {},
+  rules: {
+    'react/no-unknown-property':['error',{ignore:['css']}]
+  },
 };
