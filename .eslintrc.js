@@ -7,6 +7,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'airbnb',
+    'airbnb-typescript',
     'airbnb/hooks',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
@@ -17,6 +18,7 @@ module.exports = {
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
+  files: ['**/*.ts', '**/*.tsx'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -42,13 +44,4 @@ module.exports = {
       },
     ],
   },
-  overrides: [
-    {
-      files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
-      rules: {
-        'storybook/hierarchy-separator': 'error',
-        'storybook/default-exports': 'off',
-      },
-    },
-  ],
 };
