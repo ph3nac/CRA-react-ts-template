@@ -14,6 +14,8 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:jest-dom/recommended',
+    'plugin:testing-library/react',
     'plugin:storybook/recommended',
     'prettier',
   ],
