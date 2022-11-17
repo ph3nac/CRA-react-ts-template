@@ -20,7 +20,6 @@ module.exports = {
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
-  files: ['**/*.ts', '**/*.tsx'],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
